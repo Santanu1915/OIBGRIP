@@ -1,0 +1,147 @@
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 1000px;
+	color: #FFF;
+	background-color: rgba(20, 4, 38, 0.865);
+}
+
+header {
+	padding: 32px 16px;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 36px;
+	font-weight: 300;
+	color: rgba(236, 228, 228, 0.886);
+	margin-bottom: 16px;
+}
+
+#new-task-form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: rgba(181, 215, 237, 0.82);
+	padding: 16px;
+	border-radius: 16px;
+	margin-right: 16px;
+	color:rgb(97, 97, 137);
+	font-size: 36px;
+}
+
+#new-task-input::placeholder {
+	color: rgba(20, 4, 38, 0.865)
+}
+
+#new-task-submit {
+	color: grey;
+	font-size: 36px;
+	font-weight: 700;
+	background-image: linear-gradient(to right,grey, gainsboro);
+	
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 16px;
+}
+
+.task-list h2 {
+	font-size: 24px;
+	font-weight: 300;
+	color:rgb(169, 209, 237);
+	margin-bottom: 16px;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color:rgba(179, 217, 240, 0.813);
+	padding: 16px;
+	border-radius: 16px;
+	margin-bottom: 16px;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: rgb(0, 0, 82);
+	font-size: 20px;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color:rgba(20, 4, 38, 0.865);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 8px;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 8px;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+.task .actions .edit {
+	background-image: linear-gradient(to right, rgb(1, 20, 11), rgba(126, 0, 0, 0.244));
+	
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+	color: rgb(6, 47, 37);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDo App List</title>
+
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	
+	<div class="wrapper">
+        <div class="Task -input">
+            <input type="text" placeholder="What do you have planned?">
+        </div>
+        <div class="control">
+            <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">pending</span>
+                <span id="completed"></span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="Task-box"></ul>
+    </div>
+				
+	<script src="main.js"></script>
+</body>
+</html>
